@@ -518,8 +518,7 @@ router.post('/', async (req, res) => {
     });
   } catch (error) {
     console.error('Error sending email:', error);
-    // Handle errors appropriately
-    res.status(500).json({ error: 'An error occurred while sending the email.' });
+    res.status(500).json({ success: false, message: 'An error occurred while sending the email.' });
   }
 });
 
