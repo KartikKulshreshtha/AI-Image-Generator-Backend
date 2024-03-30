@@ -2,6 +2,7 @@ import express from 'express';
 import User from '../../models/user.js';
 const router = express.Router();
 import jwt from 'jsonwebtoken'
+import bcrypt from 'bcrypt'
 
 router.post("/", async (req, res) => {
     try {
