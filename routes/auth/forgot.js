@@ -13,7 +13,7 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ success: false, error: "User does not exist" })
     }
     // const URL = `http://localhost:5173/reset-password?email=${encodeURIComponent(email)}`;
-    const URL = `https://ai-image-generator-frontend-three.vercel.app/reset-password?email=${encodeURIComponent(email)}`;
+    const URL = `https://imageaikartik.netlify.app/reset-password?email=${encodeURIComponent(email)}`;
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
