@@ -12,7 +12,11 @@ const PostSchema = mongoose.Schema({
     image: {
         type: String,
         required: true
-    }   
+    },
+    roomId:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Room'
+    }
 })
 
 const Post = mongoose.model("Post", PostSchema);

@@ -13,20 +13,6 @@ cloudinary.config({
 
 router.get('/getAllPosts', async (req, res) => {
     try {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         const posts = await Post.find({}).maxTimeMS(30000);
         return res.status(200).json({ success: true, message: posts })
     } catch (error) {

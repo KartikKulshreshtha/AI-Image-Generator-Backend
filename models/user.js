@@ -16,6 +16,9 @@ const userSchema = new mongoose.Schema({
     dateCreated: {
         type: Date,
         default: Date.now
+    },
+    otp: {
+        type: String,
     }
 })
 
